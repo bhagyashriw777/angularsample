@@ -14,4 +14,12 @@ angular.module('testApp')
       'AngularJS',
       'Karma'
     ];
+  }
+  ,'DashboardCtrl', function () {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
   });
+   
