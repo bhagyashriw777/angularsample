@@ -1,7 +1,7 @@
 app.controller('dashboardController', function($scope,$http){ 
     $scope.pools = [];
 
-    $http.get('/api/dasboard').
+    $http.get('http://api-testapp.9i2ixvpuxp.us-east-1.elasticbeanstalk.com/api/dashboard').
     success(function(data, status, headers, config) {
         $scope.pools = data;	 
     });/*
