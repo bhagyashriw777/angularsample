@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-var app=angular
+angular
   .module('testApp', [
     'ngAnimate',
     'ngCookies',
@@ -20,11 +20,11 @@ var app=angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/dashboard.html',
-        controller: 'dashboardController',
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
       })
       .otherwise({
         redirectTo: '/'
       });
   });
-  
