@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   </head>
     <body ng-app="testApp">
-        <div class="col-md-3" ng-repeat="pool in pools">
 	<div class ="container" ng-controller="dashboardController">
+        <div class="col-md-3" ng-repeat="pool in pools">
             <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -30,7 +30,7 @@
                         </div>
                         <table class="table table-striped">
                             
-                                <td>{{pool.success}}</td>
+                                <td>{{pool}}</td>
                                 <td><button class="btn btn-primary" type="button" ng-click="addVote(option)">
                                     Vote<!-- <span class="badge">{{ option.vote }}</span>-->
                                 </button></td>
